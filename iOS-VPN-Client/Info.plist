@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDisplayName</key>
+	<string>AuraTunnel</string>
+	<key>AuraTunnelKeychainAccessGroup</key>
+	<string>$(AppIdentifierPrefix)com.shaolihuang.auratunnel.shared</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.shaolihuang.auratunnel.import</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>auratunnel</string>
+			</array>
+		</dict>
+	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>AuraTunnel 使用相机识别你主动扫描的 VPN 节点或订阅二维码。视频仅用于实时识别，不会拍照、保存或上传。</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>仅当你选择或测试位于局域网内的代理节点时，AuraTunnel 才会访问本地网络。</string>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.json</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>AuraTunnel Configuration Backup</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.shaolihuang.auratunnel.backup</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>aurabackup</string>
+				</array>
+				<key>public.mime-type</key>
+				<string>application/vnd.auratunnel.backup+json</string>
+			</dict>
+		</dict>
+	</array>
+	<key>UILaunchScreen</key>
+	<dict/>
+</dict>
+</plist>

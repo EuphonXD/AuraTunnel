@@ -6,54 +6,118 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A00000000000000000000003 /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A00000000000000000000002 /* PacketTunnel.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A00000000000000000000004 /* ThirdParty/Leaf/Artifacts/leaf.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00000000000000000000005 /* ThirdParty/Leaf/Artifacts/leaf.xcframework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A00000000000000000000081 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A000000000000000000000A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A00000000000000000000092;
+			remoteInfo = PacketTunnel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A00000000000000000000071 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A00000000000000000000003 /* PacketTunnel.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		1EBFBF0930405014007A8EA5 /* EasyVPN-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EasyVPN-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000001 /* AuraTunnel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuraTunnel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000002 /* PacketTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PacketTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000005 /* ThirdParty/Leaf/Artifacts/leaf.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ThirdParty/Leaf/Artifacts/leaf.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		1EBFBF1630405015007A8EA5 /* Exceptions for "EasyVPN-App" folder in "EasyVPN-App" target */ = {
+		A00000000000000000000011 /* Exceptions for "iOS-VPN-Client" folder in "AuraTunnel" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 1EBFBF0830405014007A8EA5 /* EasyVPN-App */;
+			target = A00000000000000000000091 /* AuraTunnel */;
+		};
+		A00000000000000000000012 /* Exceptions for "PacketTunnel" folder in "PacketTunnel" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Crypto/README.md,
+				Info.plist,
+			);
+			target = A00000000000000000000092 /* PacketTunnel */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		1EBFBF0B30405014007A8EA5 /* EasyVPN-App */ = {
+		A00000000000000000000021 /* iOS-VPN-Client */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				1EBFBF1630405015007A8EA5 /* Exceptions for "EasyVPN-App" folder in "EasyVPN-App" target */,
+				A00000000000000000000011 /* Exceptions for "iOS-VPN-Client" folder in "AuraTunnel" target */,
 			);
-			path = "EasyVPN-App";
+			path = "iOS-VPN-Client";
+			sourceTree = "<group>";
+		};
+		A00000000000000000000022 /* PacketTunnel */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A00000000000000000000012 /* Exceptions for "PacketTunnel" folder in "PacketTunnel" target */,
+			);
+			path = PacketTunnel;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000023 /* Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1EBFBF0630405014007A8EA5 /* Frameworks */ = {
+		A00000000000000000000041 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A00000000000000000000042 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000004 /* ThirdParty/Leaf/Artifacts/leaf.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1EBFBF0030405014007A8EA5 = {
+		A00000000000000000000024 = {
 			isa = PBXGroup;
 			children = (
-				1EBFBF0B30405014007A8EA5 /* EasyVPN-App */,
-				1EBFBF0A30405014007A8EA5 /* Products */,
+				A00000000000000000000021 /* iOS-VPN-Client */,
+				A00000000000000000000022 /* PacketTunnel */,
+				A00000000000000000000023 /* Shared */,
+				A00000000000000000000005 /* ThirdParty/Leaf/Artifacts/leaf.xcframework */,
+				A00000000000000000000025 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1EBFBF0A30405014007A8EA5 /* Products */ = {
+		A00000000000000000000025 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1EBFBF0930405014007A8EA5 /* EasyVPN-App.app */,
+				A00000000000000000000001 /* AuraTunnel.app */,
+				A00000000000000000000002 /* PacketTunnel.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,64 +125,118 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1EBFBF0830405014007A8EA5 /* EasyVPN-App */ = {
+		A00000000000000000000091 /* AuraTunnel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1EBFBF1730405015007A8EA5 /* Build configuration list for PBXNativeTarget "EasyVPN-App" */;
+			buildConfigurationList = A000000000000000000000C2 /* Build configuration list for PBXNativeTarget "AuraTunnel" */;
 			buildPhases = (
-				1EBFBF0530405014007A8EA5 /* Sources */,
-				1EBFBF0630405014007A8EA5 /* Frameworks */,
-				1EBFBF0730405014007A8EA5 /* Resources */,
+				A00000000000000000000061 /* Sources */,
+				A00000000000000000000041 /* Frameworks */,
+				A00000000000000000000051 /* Resources */,
+				A00000000000000000000071 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A00000000000000000000082 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A00000000000000000000021 /* iOS-VPN-Client */,
+				A00000000000000000000023 /* Shared */,
+			);
+			name = AuraTunnel;
+			packageProductDependencies = (
+			);
+			productName = AuraTunnel;
+			productReference = A00000000000000000000001 /* AuraTunnel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A00000000000000000000092 /* PacketTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A000000000000000000000C3 /* Build configuration list for PBXNativeTarget "PacketTunnel" */;
+			buildPhases = (
+				A00000000000000000000062 /* Sources */,
+				A00000000000000000000042 /* Frameworks */,
+				A00000000000000000000052 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				1EBFBF0B30405014007A8EA5 /* EasyVPN-App */,
+				A00000000000000000000022 /* PacketTunnel */,
+				A00000000000000000000023 /* Shared */,
 			);
-			name = "EasyVPN-App";
+			name = PacketTunnel;
 			packageProductDependencies = (
 			);
-			productName = "EasyVPN-App";
-			productReference = 1EBFBF0930405014007A8EA5 /* EasyVPN-App.app */;
-			productType = "com.apple.product-type.application";
+			productName = PacketTunnel;
+			productReference = A00000000000000000000002 /* PacketTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1EBFBF0130405014007A8EA5 /* Project object */ = {
+		A000000000000000000000A1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2660;
 				LastUpgradeCheck = 2660;
 				TargetAttributes = {
-					1EBFBF0830405014007A8EA5 = {
+					A00000000000000000000091 = {
 						CreatedOnToolsVersion = 26.6;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					A00000000000000000000092 = {
+						CreatedOnToolsVersion = 26.6;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
-			buildConfigurationList = 1EBFBF0430405014007A8EA5 /* Build configuration list for PBXProject "EasyVPN-App" */;
+			buildConfigurationList = A000000000000000000000C1 /* Build configuration list for PBXProject "EasyVPN-App" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
 				Base,
 			);
-			mainGroup = 1EBFBF0030405014007A8EA5;
+			mainGroup = A00000000000000000000024;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 1EBFBF0A30405014007A8EA5 /* Products */;
+			productRefGroup = A00000000000000000000025 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1EBFBF0830405014007A8EA5 /* EasyVPN-App */,
+				A00000000000000000000091 /* AuraTunnel */,
+				A00000000000000000000092 /* PacketTunnel */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1EBFBF0730405014007A8EA5 /* Resources */ = {
+		A00000000000000000000051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000052 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -128,7 +246,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1EBFBF0530405014007A8EA5 /* Sources */ = {
+		A00000000000000000000061 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000062 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -137,98 +262,156 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A00000000000000000000082 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A00000000000000000000092 /* PacketTunnel */;
+			targetProxy = A00000000000000000000081 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		1EBFBF1830405015007A8EA5 /* Debug */ = {
+		A000000000000000000000B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "iOS-VPN-Client/AuraTunnel.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = GND5V29AXB;
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = x86_64;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "EasyVPN-App/Info.plist";
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_FILE = "iOS-VPN-Client/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = AuraTunnel;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shaolihuang.easyvpnapp.EasyVPN-App";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				REGISTER_APP_GROUPS = YES;
-				SDKROOT = auto;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaolihuang.auratunnel;
+				PRODUCT_NAME = AuraTunnel;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 26.5;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		1EBFBF1930405015007A8EA5 /* Release */ = {
+		A000000000000000000000B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "iOS-VPN-Client/AuraTunnel.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = GND5V29AXB;
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = x86_64;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "EasyVPN-App/Info.plist";
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_FILE = "iOS-VPN-Client/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = AuraTunnel;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shaolihuang.easyvpnapp.EasyVPN-App";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				REGISTER_APP_GROUPS = YES;
-				SDKROOT = auto;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaolihuang.auratunnel;
+				PRODUCT_NAME = AuraTunnel;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 26.5;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		1EBFBF1A30405015007A8EA5 /* Debug */ = {
+		A000000000000000000000B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = GND5V29AXB;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = x86_64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaolihuang.auratunnel.PacketTunnel;
+				PRODUCT_NAME = PacketTunnel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A000000000000000000000B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = GND5V29AXB;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = x86_64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaolihuang.auratunnel.PacketTunnel;
+				PRODUCT_NAME = PacketTunnel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A000000000000000000000B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -290,7 +473,7 @@
 			};
 			name = Debug;
 		};
-		1EBFBF1B30405015007A8EA5 /* Release */ = {
+		A000000000000000000000B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -347,25 +530,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1EBFBF0430405014007A8EA5 /* Build configuration list for PBXProject "EasyVPN-App" */ = {
+		A000000000000000000000C1 /* Build configuration list for PBXProject "EasyVPN-App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1EBFBF1A30405015007A8EA5 /* Debug */,
-				1EBFBF1B30405015007A8EA5 /* Release */,
+				A000000000000000000000B5 /* Debug */,
+				A000000000000000000000B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1EBFBF1730405015007A8EA5 /* Build configuration list for PBXNativeTarget "EasyVPN-App" */ = {
+		A000000000000000000000C2 /* Build configuration list for PBXNativeTarget "AuraTunnel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1EBFBF1830405015007A8EA5 /* Debug */,
-				1EBFBF1930405015007A8EA5 /* Release */,
+				A000000000000000000000B1 /* Debug */,
+				A000000000000000000000B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A000000000000000000000C3 /* Build configuration list for PBXNativeTarget "PacketTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A000000000000000000000B3 /* Debug */,
+				A000000000000000000000B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1EBFBF0130405014007A8EA5 /* Project object */;
+	rootObject = A000000000000000000000A1 /* Project object */;
 }

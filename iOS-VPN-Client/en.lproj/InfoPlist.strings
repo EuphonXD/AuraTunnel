@@ -1,0 +1,3 @@
+"NSCameraUsageDescription" = "AuraTunnel uses the camera to recognize a VPN node or subscription QR code you choose to scan. Video is used only for live recognition and is never photographed, stored, or uploaded.";
+"NSLocalNetworkUsageDescription" = "AuraTunnel accesses the local network only when you select or test a proxy node hosted on your LAN.";
+"CFBundleDisplayName" = "AuraTunnel";

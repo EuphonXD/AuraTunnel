@@ -1,0 +1,47 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode user state and local build output
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+DerivedData/
+build/
+*.xcarchive
+*.xcresult
+*.dSYM
+*.dSYM.zip
+
+# Swift Package Manager
+.build/
+.swiftpm/xcode/package.xcworkspace/xcuserdata/
+
+# Rust build output (keep the bundled Leaf XCFramework under Artifacts)
+ThirdParty/Leaf/target/
+target/
+
+# Local signing and provisioning material
+*.p12
+*.p8
+*.mobileprovision
+*.provisionprofile
+*.cer
+*.key
+*.pem
+Secrets.xcconfig
+Local.xcconfig
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Editor state
+.idea/
+.vscode/
+*.swp
+*~

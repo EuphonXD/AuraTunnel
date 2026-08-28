@@ -1,0 +1,3 @@
+"NSCameraUsageDescription" = "AuraTunnel 使用相机识别你主动扫描的 VPN 节点或订阅二维码。视频仅用于实时识别，不会拍照、保存或上传。";
+"NSLocalNetworkUsageDescription" = "仅当你选择或测试位于局域网内的代理节点时，AuraTunnel 才会访问本地网络。";
+"CFBundleDisplayName" = "AuraTunnel";
