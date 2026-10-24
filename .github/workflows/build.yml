@@ -14,7 +14,7 @@ jobs:
           xcodebuild -project EasyVPN-App.xcodeproj -scheme AuraTunnel \
             -configuration Release -sdk iphoneos \
             -destination 'generic/platform=iOS' \
-            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" SWIFT_VERSION=5 SWIFT_STRICT_CONCURRENCY=minimal \
             build | tee build.log
       - name: Package IPA
         run: |
